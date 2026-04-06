@@ -1,0 +1,66 @@
+.about-section {
+  display: flex;
+  height: 100vh;
+  width: 20%;
+  flex-direction: column;
+  padding: 2rem 2rem 0 2rem;
+  border-right: 1px solid #c4c4c4;
+  background-color: #fcfcfc;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "DM Sans";
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  font-family: "DM Sans";
+  font-weight: 400;
+  text-align: left;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.about-text h1 {
+  letter-spacing: -3%;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  line-height: 1.5;
+  font-weight: 500;
+  color: #525252;
+  font-family: "Plus Jakarta Sans";
+}
+
+.about-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-contact h2 {
+  font-weight: 700;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: gray;
+  font-family: "Poppins";
+  margin-bottom: 1rem;
+}

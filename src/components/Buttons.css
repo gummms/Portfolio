@@ -1,0 +1,281 @@
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  justify-content: flex-start;
+  align-items: stretch;
+  border: 1px solid #bfbfbf;
+  background-color: #fff;
+}
+
+.svg-inline--fa {
+  height: auto;
+}
+
+.btn-text {
+  flex-grow: 1;
+  text-align: left;
+  align-self: center;
+}
+
+.icon-wrapper {
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem 0 0;
+}
+
+#LinkedIn,
+#Behance,
+#Whatsapp,
+#Email,
+#GitHub {
+  font-size: 1.8rem;
+}
+
+#Whatsapp {
+  color: #55d46a;
+}
+
+#Email {
+  color: #313131;
+}
+
+#LinkedIn {
+  color: #0077b5;
+}
+
+#Behance {
+  color: #2657ff;
+}
+
+.btn-contact {
+  transition: all 0.3s;
+  padding-right: 0;
+}
+
+.btn-contact:hover {
+  background-color: #313131;
+  border-color: #313131;
+  color: #fff;
+}
+
+.btn-contact:hover :is(.icon, #Whatsapp, #LinkedIn, #GitHub, #Behance, #Email) {
+  color: #fff;
+}
+
+.copy-action {
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+
+  height: auto;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 1rem;
+  margin: -0.5rem 0;
+
+  background-image: linear-gradient(#bfbfbf, #bfbfbf);
+  background-size: 1px calc(100% - 1rem);
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.copy-action .tooltip-box {
+  position: absolute;
+  transform: translateX(-10px);
+
+  left: calc(85% + 0.8rem);
+
+  background-color: #fff;
+  color: #313131;
+  border-radius: 0.4rem;
+  padding: 0.7rem 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    color 0.3s ease;
+}
+
+.copy-action::before {
+  content: "";
+  position: absolute;
+  left: calc(85% + 0.3rem + 1px);
+  transform: translateX(-10px) rotate(45deg);
+
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: #fff;
+
+  z-index: 11;
+  pointer-events: none;
+
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.1s ease,
+    visibility 0.3s ease,
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  clip-path: polygon(-200% -205%, 205% 200%, -200% 200%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .copy-action:hover .tooltip-box {
+    animation: tooltipHoverEnter 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+      forwards;
+    box-shadow: 0px 6px 15px 0px #08011d4b;
+  }
+
+  .copy-action:hover::before {
+    animation: tooltipPointerHoverEnter 0.3s
+      cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    box-shadow: 0px 6px 15px 0px #08011d4b;
+  }
+  .copy-action.is-copied .tooltip-box {
+    animation: tooltipBoxPulseFade 4s forwards;
+    box-shadow: 0px 6px 15px 0px #08011d4b;
+  }
+  .copy-action.is-copied::before {
+    animation: tooltipPointerPulseFade 4s forwards;
+    box-shadow: 0px 6px 15px 0px #08011d4b;
+  }
+}
+
+.copy-action .copyIcon {
+  animation: iconReset 0.3s ease-out forwards;
+  transform-origin: center;
+}
+
+.copy-action.is-copied .copyIcon {
+  animation: iconPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  transform-origin: center;
+  color: rgb(0, 212, 0);
+}
+
+@keyframes iconPop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes iconReset {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes tooltipBoxPulseFade {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  5% {
+    transform: translateX(-4px);
+    opacity: 1;
+  }
+  10% {
+    transform: translateX(4px);
+    opacity: 1;
+  }
+  15% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes tooltipPointerPulseFade {
+  0% {
+    transform: translateX(0) rotate(45deg);
+    opacity: 1;
+  }
+  5% {
+    transform: translateX(-4px) rotate(45deg);
+    opacity: 1;
+  }
+  10% {
+    transform: translateX(4px) rotate(45deg);
+    opacity: 1;
+  }
+  15% {
+    transform: translateX(0px) rotate(45deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(0) rotate(45deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0) rotate(45deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes tooltipHoverEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes tooltipPointerHoverEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px) rotate(45deg);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(45deg);
+    visibility: visible;
+  }
+}
