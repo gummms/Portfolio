@@ -10,19 +10,22 @@ import ErrorPage from "./routes/ErrorPage.jsx";
 
 import "./index.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+      ],
+    },
+  ],
+  { basename: "/Portfolio/" },
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
