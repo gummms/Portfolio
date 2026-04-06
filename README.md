@@ -1,6 +1,6 @@
 # Portfolio
 
-## [Personal website to display my portfolio as a UX Designer.](www.gustavomendes.dev.br)
+## [Personal website to display my portfolio as a UX Designer.](https://gummms.github.io/Portfolio/)
 
 > ### ⚠️ This is currently a **WIP** project. If somehow you wanted to see my portfolio and ended up here, you can check out the [**legacy version**](https://behance.net/gmms).
 
@@ -73,7 +73,7 @@ This project was made with the help of a LLM, specially for:
 
 ## Usage
 
-Just go to [**gustavomendes.dev.br**](www.gustavomendes.dev.br) or click [**here**](www.gustavomendes.dev.br).
+Just go to [**gustavomendes.dev.br**](https://gummms.github.io/Portfolio/) or click [**here**](https://gummms.github.io/Portfolio/).
 
 ---
 
