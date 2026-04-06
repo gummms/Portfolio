@@ -1,10 +1,8 @@
 # Portfolio
 
-Personal website to display my portfolio as a UX Designer.
+## [Personal website to display my portfolio as a UX Designer.](www.gustavomendes.dev.br)
 
-> ###You can access it [here]("https://behance.net/gmms")!
-
-> This is currently a `WIP` project. If somehow you wanted to see my portfolio and ended up here, you can check out the [legacy version]("https://behance.net/gmms").
+> ### ⚠️ This is currently a **WIP** project. If somehow you wanted to see my portfolio and ended up here, you can check out the [**legacy version**](https://behance.net/gmms).
 
 ---
 
@@ -40,42 +38,42 @@ The first section displays my name, role and contact info as buttons with:
 
 ### Study Cases section
 
-The middle section, displaying Study Cases, can be opened to highlight a study case. This will display case details and push the other two sections to a smaller state on the sides.
+The middle section, displaying Study Cases, can be opened to highlight a study case. This will display case details and push the other two sections to a smaller state on the sides. Said sections will retain functionalities while in smaller state.
 
 ### Visual Identities section
 
-Although it's not my focus, I also work with graphic and brand design. I'll display here the main images from these works with an auto-scroll, only for show. If the user wants to know more about these projects, they are still available at my [Legacy Portfolio]("https://behance.net/gmms").
+Although it's not my focus, I also work with graphic and brand design. I'll display here the main images from these works with an auto-scroll, only for show. If the user wants to know more about these projects, they are still available at my [**Legacy Portfolio**](https://behance.net/gmms).
 
 ---
 
 ## Technologies
 
-- ReactJS;
-- MDXJS;
-- Vite;
+- `ReactJS`;
+- `MDXJS`;
+- `Vite`;
+- `GitHub Actions`.
 
 ## AI Usage
 
 This project was made with the help of a LLM, specially for:
 
 - UX Research and validation;
-- Medium fidelity prototype creation;
+- Medium fidelity prototype/wireframe creation;
 - General questions about coding;
+- Guide through new technologies;
 - Iteration, correction and testing.
 
-### Usage of AI is encouraged by me and was not heavily used on this project for the following reason:
+### Usage of AI is encouraged by me and was not heavily used on this project because this is a very personal project, so I wanted to:
 
-> This is a very personal project, so I wanted to:
->
-> - Make architecture, logic and general code structure flawless, scalable and iteractive;
-> - Refine every detail myself - no pixel out of place, no color being used wrongly, no typos, no bugs whatsoever;
-> - **Be the perfeccionist that I am and cannot be while working with deadlines.**
+- Make architecture, logic and general code structure flawless, scalable and iteractive;
+- Refine every detail myself - no pixel out of place, no color being used wrongly, no typos, no bugs whatsoever and the most smooth, light processing possible;
+- **Be the perfeccionist that I am and cannot be while working with deadlines.**
 
 ---
 
 ## Usage
 
-Just go to the website address (www.portfolio.com) or click the [here]("https://behance.net/gmms")!
+Just go to [**gustavomendes.dev.br**](www.gustavomendes.dev.br) or click [**here**](www.gustavomendes.dev.br).
 
 ---
 

@@ -1,11 +1,36 @@
 import ButtonMain from "../../ButtonMain.jsx";
+import Icones from "../../Icones.jsx";
 
-# My First MDX File
+import "../StudyCases.css";
+import "../../Buttons.css";
 
-This is a standard Markdown paragraph. I can use **bold** or _italic_ text easily.
+export const warning = (
+  <Icones
+    style="solid"
+    icone="helmet-safety"
+    id="warning-icon"
+    iconClass="warning-icon"
+  />
+);
 
-Here is the React component I imported:
+<div className="wipHeader">
 
-<ButtonMain path="/home" text="oie" />;
+# <div className="wipBoxIcon">{warning}</div>
 
-And the Markdown just continues down here!
+# <div className="wipBoxTitle"> WIP!</div>
+
+</div>
+
+This section is currently a **Work In Progress**.
+
+If you wanted to see my portfolio and ended up here, you can check out the **legacy version:**
+
+<ButtonMain
+  text="behance.net/gmms"
+  path="https://behance.net/gmms"
+  icon="square-behance"
+  istyle="brand"
+  id="btn-contact"
+  iid="Behance"
+  copyable={true}
+/>
