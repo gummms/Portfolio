@@ -12,12 +12,12 @@ import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/Portfolio",
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/home",
+        index: true,
         element: <Home />,
       },
     ],
