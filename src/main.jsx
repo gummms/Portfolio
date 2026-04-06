@@ -12,7 +12,7 @@ import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Portfolio",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
