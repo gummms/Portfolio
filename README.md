@@ -55,19 +55,15 @@ Although it's not my focus, I also work with graphic and brand design. I'll disp
 
 ## AI Usage
 
-This project was made with the help of a LLM, specially for:
+This project was made with the help of a specs-driven group of agents, customized by myself, specially for:
 
 - UX Research and validation;
 - Medium fidelity prototype/wireframe creation;
 - General questions about coding;
 - Guide through new technologies;
-- Iteration, correction and testing.
+- Iteration, correction and testing;
+- First draft of mobile layout.
 
-### Usage of AI is encouraged by me and was not heavily used on this project because this is a very personal project, so I wanted to:
-
-- Make architecture, logic and general code structure flawless, scalable and iteractive;
-- Refine every detail myself - no pixel out of place, no color being used wrongly, no typos, no bugs whatsoever and the most smooth, light processing possible;
-- **Be the perfeccionist that I am and cannot be while working with deadlines.**
 
 ---
 
