@@ -1,11 +1,18 @@
 .logos-section {
   display: flex;
-  min-width: 15%;
+  width: 100%;
   flex-direction: column;
-  justify-content: center;
   justify-content: flex-start;
-  flex: 0;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .logos-section {
+    min-width: 15%;
+    flex: 0;
+    padding: 2rem 0 0 0;
+    justify-content: center;
+  }
 }
 
 .logos-section h1 {
@@ -18,14 +25,30 @@
 .logos-list {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  justify-content: space-evenly;
+  padding: 1rem 0;
+  gap: 2rem;
+
+}
+
+@media (min-width: 768px) {
+  .logos-list {
+    flex: 1;
+    justify-content: space-evenly;
+    padding: 0;
+
+  }
 }
 
 .logo-box {
   display: flex;
   width: 100%;
-  padding: 0 2.5rem;
+  padding: 0 2rem;
+}
+
+@media (min-width: 768px) {
+  .logo-box {
+    padding: 0 2.5rem;
+  }
 }
 
 .logos-section img {

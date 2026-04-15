@@ -5,6 +5,7 @@
   min-width: 100vw;
   background-color: #fff;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 @media (min-width: 768px) {

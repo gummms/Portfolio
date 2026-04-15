@@ -1,11 +1,21 @@
 .about-section {
   display: flex;
-  height: 100vh;
-  width: 20%;
+  width: 100%;
+  height: auto;
   flex-direction: column;
-  padding: 2rem 2rem 0 2rem;
-  border-right: 1px solid #c4c4c4;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #c4c4c4;
   background-color: #fcfcfc;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    width: 20%;
+    height: 100vh;
+    padding: 2rem 2rem 0 2rem;
+    border-right: 1px solid #c4c4c4;
+    border-bottom: none;
+  }
 }
 
 .about-title {
